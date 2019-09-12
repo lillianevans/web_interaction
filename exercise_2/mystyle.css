@@ -1,0 +1,31 @@
+body {
+   
+ 
+}
+
+
+.louise {
+    margin: 40px;
+    float: left;
+    }
+.title {
+    float: left;
+}
+.section {
+    float: left;
+    padding: 0px 150px 0px 0px;}
+.imageandtext {
+    position: absolute;
+    top: 40px;
+    left: 493px;
+    width: 400px;
+    }
+p {font-family: sans-serif;
+    font-size: 12px;
+    color: darkgoldenrod;}
+.linkset {
+    margin: 200px 0px 0px 0px;
+    }
+.links {
+    margin: 20px 40px;
+    display:block;}
