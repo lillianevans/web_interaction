@@ -7,7 +7,7 @@ body, p, h1 {
     margin: 0;
     padding: 0;
     }
-#containter {text-align: center;}
+#container {text-align: center;}
 .sidebar {
     text-align: center;
     background-image: url(imgs/bar2.png);
