@@ -16,6 +16,7 @@ body, p, h1 {
     background-color: #f9bcec;
     
     }
+a:link {text-decoration: none;}
 h1 {
     font-family: "Bungee Shade", monospace;
     font-size: 6.5vw;
