@@ -1,6 +1,6 @@
 @font-face {
-    font-family: "Bungee Shade";
-    src: url("fonts/Bungee_Shade/BungeeShade-Regular.ttf")
+    font-family: "Beth Ellen";
+    src: url("fonts/Beth_Ellen/BethEllen-Regular.ttf")
     }
 #container {text-align: center;}
 body, p, h1 {
@@ -18,7 +18,7 @@ body, p, h1 {
     }
 a:link {text-decoration: none;}
 h1 {
-    font-family: "Bungee Shade", monospace;
+    font-family: "Beth Ellen", cursive;
     font-size: 6.5vw;
     color: #faf7e7; 
     
@@ -29,10 +29,12 @@ h1 {
     color: #faf7e7;
     }
 .timestamp {
-    text-align: left;
-    margin: 40px;
-    font-family: monospace;
+    color: #faf7e7;
     font-size: 35px;
+    background-image: url(imgs/bar2.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: #f9bcec;
     }
 .bio {
     display: inline-block;
@@ -40,28 +42,29 @@ h1 {
     margin: 80px;
     font-size: 25px;
     font-family: serif;
-    max-width: 750px;
+    max-width: 500px;
     }
 bios { 
     text-align: center;}
-img {width: 40%;
-    max-width: 750px;
+img {width: 30%;
+    max-width: 650px;
     height: auto;
-}
+    }
 .images {
-  
-    display: inline-block;}
+    display: inline-block;
+    }
 .flowerimages img{
     width: 10%;
     max-width: 400px;
     display: inline-block;
-}
+    margin: 100px 0 0;
+    }
 .flowerimages2 img {
     width: 10%;
     max-width: 400px;
     display: inline-block;
     margin: 0 0 100px;
-}
+    }
 
 
 
