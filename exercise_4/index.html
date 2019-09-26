@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Clock</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">  
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>  
+  <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script> 
+ <script>  
+  $(function() {  
+    $( "#draggable" ).draggable();  
+  });  
+  </script> 
+ <script>  
+  $(function() {  
+    $( "#draggable1" ).draggable();  
+  });  
+  </script>
+ <script>  
+  $(function() {  
+    $( "#draggable2" ).draggable();  
+  });  
+  </script>
+    <script>  
+  $(function() {  
+    $( "#draggable3" ).draggable();  
+  });  
+  </script>
+    <script>  
+  $(function() {  
+    $( "#draggable4" ).draggable();  
+  });  
+  </script>
+    <script>  
+  $(function() {  
+    $( "#draggable5" ).draggable();  
+  });  
+  </script>
+    </head>
+    
+    <body onload="updateClock(); setInterval('updateClock()', 1000 )">
+        ***not done, test
+    <div id="container">
+            <div id="draggable" class="ui-widget-content">
+            <div id="getmonth"></div></div>
+            <div id="draggable1" class="ui-widget-content">
+            
+            <div id="gethour"></div></div>
+            <div id="draggable2" class="ui-widget-content">
+                <div id="getday"></div></div>
+            <div id="draggable3" class="ui-widget-content">
+            
+                <div id="getminute"></div></div>
+            <div id="draggable4" class="ui-widget-content">
+            
+                <div id="getyear"></div></div>
+            <div id="draggable5" class="ui-widget-content">
+            
+            <div id="getsecond"></div>
+            </div>
+        <div id="date"></div>
+        
+     </div>
+    </body>
+    
+      <script src="js/jquery.js"></script>
+      <script src="js/scripts.js"></script>   
+</html>
