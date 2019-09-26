@@ -9,6 +9,10 @@ p {font-family: monospace;
     font-size: 15vw;
     float: left;
 }
+p:hover {
+    color: #d5c0b2;
+    border-radius: 0px;
+}
 #getyear{
     font-family: monospace;
     font-size: 15vw;
@@ -17,6 +21,10 @@ p {font-family: monospace;
     text-align: center;
     float: left;
     }
+#getyear:hover {
+    color: #d5c0b2;
+    border-radius: 0px;
+}
 #getmonth{
     font-family: monospace;
     color: #cc7b65;
@@ -24,6 +32,10 @@ p {font-family: monospace;
     font-size: 15vw;
     text-align: center;
     float: left;}
+#getmonth:hover {
+    color: #d5c0b2;
+    border-radius: 0px;
+}
 
 #getday{
     font-family: monospace;
@@ -33,6 +45,10 @@ p {font-family: monospace;
     text-align: center;
     float: left;
 }
+#getday:hover {
+    color: #d5c0b2;
+    border-radius: 0px;
+}
 #gethour {
     font-family: monospace;
     color: #E6A4AF;
@@ -40,6 +56,10 @@ p {font-family: monospace;
     font-size: 15vw;
     text-align: center;
     float: left;
+}
+#gethour:hover {
+    color: #d5c0b2;
+    border-radius: 0px;
 }
 #getminute{
     font-family: monospace;
@@ -49,6 +69,10 @@ p {font-family: monospace;
     text-align: center;
     float: left;
 }
+#getminute:hover{
+    color: #d5c0b2;
+    border-radius: 0px;
+}
 #getsecond{
     font-family: monospace;
     font-size: 15vw;
@@ -56,6 +80,10 @@ p {font-family: monospace;
     width: 50%;
     text-align: center;
     float: left;
+}
+#getsecond:hover {
+    color: #d5c0b2;
+    border-radius: 0px;
 }
 #draggable {
  width: 0%;

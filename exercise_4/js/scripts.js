@@ -25,6 +25,8 @@ function formatAMPM(date) {var ampm = hours >= 12 ? 'pm' : 'am';
   hours = hours ? hours : 12;
 minutes = minutes < 10 ? '0'+minutes : minutes;}
 
+console.log(formatAMPM(new Date));
+
 
 function updateTime(k) { /* appending 0 before time elements if less than 10 */
   if (k < 10) {
