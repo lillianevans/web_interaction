@@ -10,7 +10,7 @@ p {font-family: monospace;
     float: left;
 }
 p:hover {
-    color: #d5c0b2;
+    color: #866365;
     border-radius: 0px;
 }
 #getyear{
@@ -22,7 +22,7 @@ p:hover {
     float: left;
     }
 #getyear:hover {
-    color: #d5c0b2;
+    color: #cf9585;
     border-radius: 0px;
 }
 #getmonth{
@@ -33,7 +33,7 @@ p:hover {
     text-align: center;
     float: left;}
 #getmonth:hover {
-    color: #d5c0b2;
+    color: #cf9585;
     border-radius: 0px;
 }
 
@@ -46,7 +46,7 @@ p:hover {
     float: left;
 }
 #getday:hover {
-    color: #d5c0b2;
+    color: #cf9585;
     border-radius: 0px;
 }
 #gethour {
