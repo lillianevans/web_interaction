@@ -36,3 +36,7 @@ function sizeFunction(){
 function myFunction() {
   document.body.style.backgroundImage= "url(images/background3.png)";
 }
+
+function myFunction() {
+  document.getElementById("logo").style.color = "orange";
+}
