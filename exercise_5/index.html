@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>logo tool</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   <style>
+        #tool {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        background-color: #f1f1f1;
+        padding: 20px;
+        margin: 10px;
+        border-radius: 10px;
+       }
+        #logo {
+        text-align: center;
+        font-family: "Lobster";
+        
+        
+       }
+       body {
+           background-image: url(images/background4.png);
+       }
+       p {color: #f9bcec;}
+       
+       @font-face {
+    font-family: "Lobster";
+    src: url("fonts/Lobster/Lobster-Regular.ttf")
+    }
+        @font-face {
+    font-family: "Monoton";
+    src: url("fonts/Monoton/Monoton-Regular.ttf")
+    }
+        @font-face {
+    font-family: "Bungee Inline";
+    src: url("fonts/Bungee_Inline/BungeeInline-Regular.ttf")
+    }
+        </style>
+    </head>
+    
+    <body>
+       <p id="logo">Lillian Evans</p>
+        <div id="tool">
+        <select id="myFonts" onchange="fontFunction()"><option value="Lobster, cursive">Lobster</option>
+        <option value="Monoton, monospace">Monoton</option> 
+        <option value="Bungee Inline, monospace">Bungee Inline</option>
+        </select>
+        <br>
+        <br>
+        <input type="checkbox" id="boldCheck" onclick="boldFunction()">Bold<br>
+        <input type="checkbox" id="italicCheck" onclick="italicFunction()">Italic<br>
+        
+        <br>
+        Size
+        <input id="size" type="range" value="150" min="100" max="200" step="1" oninput="sizeFunction()">
+        <br>
+        <br>
+        <button onclick="myFunction()">Change Background</button>
+        <br>
+        <br>
+        <button onclick="myFunction()">Change Color</button>
+    </div>
+    </body>
+    
+      
+      <script src="js/scripts.js"></script>   
+</html>
