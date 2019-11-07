@@ -5,24 +5,31 @@
 @font-face {font-family: "IBM Plex Mono";
     src: url("fonts/IBM_Plex_Mono/IBMPlexMono-Regular.ttf")}
 body {background-color: #1a221a;
-    margin: 200px;}
+    margin: 200px;
+    }
 .title {
         font-family:  VT323, monospace;
-        font-size: 30px;
+        font-size: 50px;
         color: #668e58;
 }
 .instructions {
         font-family: IBM Plex Mono, monospace;
         color: #4b7b4e;
+    
+    float: left;
+    text-align: left;
 }
+h2 {font-family: VT323, monospace;
+    font-size: 40px;
+    color: #668e58;
+    padding-top: 40px;}
 .instructions p {
-        font-size: 16px;
+        font-size: 24px;
+    float: left;
 }
-.link {float: right;
-        font-size: 12px;
-        }
+
 a:link {font-family:monospace;
-    font-size: 14px;
+    font-size: 36px;
     color: #4b7b4e;
         text-decoration: none;
      }
@@ -31,22 +38,19 @@ a:visited {color: #668e58;
 a:hover {color: #4b7b4e;
         text-decoration: underline;}
 .button {
-  font: bold 11px Arial;
-  text-decoration: none;
-  background-color: #EEEEEE;
-  color: #333333;
-  padding: 2px 6px 2px 6px;
-  border-top: 1px solid #CCCCCC;
-  border-right: 1px solid #333333;
-  border-bottom: 1px solid #333333;
-  border-left: 1px solid #CCCCCC;
+  background-color: #0a221a;
+  border-color: #0a221a;
+  padding: 40px 60px 40px 60px;
+    text-align: center;
+ 
 }
 
-
+#center {max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;}
 #text {
     
 }
 
-img { 
-        width: 75%;
+img { width: 1000px;
         }

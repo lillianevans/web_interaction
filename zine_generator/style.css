@@ -67,5 +67,6 @@ p {float: left;
     margin: 200px;
 }
 
-img {
-        width: 75%;}
+.img {height: 1000px;
+        width: 100px;
+       }
