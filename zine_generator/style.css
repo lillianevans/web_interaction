@@ -35,8 +35,8 @@ p {float: left;
 }
 
 .fixed {
-        margin: 495px 50px 120px -685px;
-        width: 1800px;
+        margin: 408px 50px 125px -585px;
+        width: 1600px;
         height: 800px;
         float: left;
         
@@ -44,7 +44,7 @@ p {float: left;
         -webkit-transform: rotate(90deg);}
 
 .fixed2 {
-        margin: -1158px 350px 550px 115px; 
+        margin: -1066px 650px 650px 115px; 
         width: 1800px;
         height: 800px;
         float: left;
@@ -52,8 +52,8 @@ p {float: left;
         overflow: hidden;
         transform: rotate(270deg);
         -webkit-transform: rotate(270deg);}
-.fixed3 {
-        margin: 0px 750px -1000px 40px;
+.fixed3 textarea {
+        margin: -90px -25px -180px 60px;
 }
 .title {
         font-family: monospace;
