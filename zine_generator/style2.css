@@ -1,0 +1,52 @@
+@font-face {
+    font-family: "VT323";
+    src: url("fonts/VT323/VT323-Regular.ttf");
+    }
+@font-face {font-family: "IBM Plex Mono";
+    src: url("fonts/IBM_Plex_Mono/IBMPlexMono-Regular.ttf")}
+body {background-color: #1a221a;
+    margin: 200px;}
+.title {
+        font-family:  VT323, monospace;
+        font-size: 30px;
+        color: #668e58;
+}
+.instructions {
+        font-family: IBM Plex Mono, monospace;
+        color: #4b7b4e;
+}
+.instructions p {
+        font-size: 16px;
+}
+.link {float: right;
+        font-size: 12px;
+        }
+a:link {font-family:monospace;
+    font-size: 14px;
+    color: #4b7b4e;
+        text-decoration: none;
+     }
+a:visited {color: #668e58;
+        text-decoration: none;}
+a:hover {color: #4b7b4e;
+        text-decoration: underline;}
+.button {
+  font: bold 11px Arial;
+  text-decoration: none;
+  background-color: #EEEEEE;
+  color: #333333;
+  padding: 2px 6px 2px 6px;
+  border-top: 1px solid #CCCCCC;
+  border-right: 1px solid #333333;
+  border-bottom: 1px solid #333333;
+  border-left: 1px solid #CCCCCC;
+}
+
+
+#text {
+    
+}
+
+img { 
+        width: 75%;
+        }

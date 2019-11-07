@@ -1,0 +1,71 @@
+@font-face {
+    font-family: "VT323";
+    src: url("fonts/VT323/VT323-Regular.ttf");
+    }
+@font-face {font-family: "IBM Plex Mono";
+    src: url("fonts/IBM_Plex_Mono/IBMPlexMono-Regular.ttf")}
+body {margin-left: auto;
+        margin-right: auto;}
+textarea {
+        resize: none;
+        margin: 18px 28px;
+        font-family: IBM Plex Mono, monospace;
+        font-size: 40px;
+        resize: none;
+        width: 325px;
+        height: 500px;
+        border: dashed 1px black;}
+.fixed3 textarea {
+        width: 1100px;
+        height: 1450px;
+        resize: none;
+        font-family: VT323, monospace;
+        font-size: 200px;
+        border: dashed 1px black;
+}
+p {float: left;
+    font-size: 30px;}
+
+
+.whole {width: 1600px;
+        height: 3100px;
+        overflow: hidden;}
+.number {transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
+}
+
+.fixed {
+        margin: 495px 50px 120px -685px;
+        width: 1800px;
+        height: 800px;
+        float: left;
+        
+        transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);}
+
+.fixed2 {
+        margin: -1158px 350px 550px 115px; 
+        width: 1800px;
+        height: 800px;
+        float: left;
+        
+        overflow: hidden;
+        transform: rotate(270deg);
+        -webkit-transform: rotate(270deg);}
+.fixed3 {
+        margin: 0px 750px -1000px 40px;
+}
+.title {
+        font-family: monospace;
+        font-size: 24px;
+}
+.instructions {
+        font-family: monospace;
+}
+
+#text {
+    margin: 200px;
+}
+
+img {
+        width: 75%;}
