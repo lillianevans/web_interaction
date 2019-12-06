@@ -2,30 +2,38 @@
 <html>
     
     <head>
+        
         <link href="https://file.myfontastic.com/zY6SzaP5czqydwo8jcncLS/icons.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap" rel="stylesheet">
         <meta charset="utf-8">
         <title>Lillian Evans</title>
         <style> 
-           
+            @font-face {
+                font-family: "lilliansk";
+                src: url("fonts/lilliansk.ttf")
+            }
+            body {background-image: url(grit.png);}
+            .image {text-align: center;}
             p {font-family: 'lilliansk', monospace;
             font-size: 18px;}
             
-            .header {font-family: 'lilliansk', monospace;
+            .header {font-family: lilliansk, monospace;
                 font-size: 30px;}
             
-            .header2 {font-family: 'lilliansk', monospace;
+            .header2 {font-family: lilliansk, monospace;
                 font-size: 18px;
-                    color: dodgerblue;}
-            .explanation:hover {font-family: 'lilliansk', monospace;
+                    color: dodgerblue;
+                background-color: white;}
+            .explanation:hover {font-family: lilliansk, monospace;
                 font-size: 18px;
-            background-color: none;}
+            background-color: white;}
             .explanation {font-family: 'Source Code Pro', sans-serif;
-                margin: 30px;
+            margin: 30px;
             font-size: 18px;
-            padding: 10px;}
-            .underline {font-family: "lilliansk", monospace;
+            padding: 10px;
+            background-color: white;}
+            .underline {font-family: lilliansk, monospace;
             font-size: 18px;
             text-decoration: underline;}
             .collapsible {
@@ -37,31 +45,32 @@
                 text-align: left;
                 outline: none;
                 font-size: 15px;
+                
             }
-            .active, .collapsible:hover {background-color: #ccc;}
+            .active, .collapsible:hover {background-color: #f1f1f1; }
             .content {padding: 0 18px;
                         display: none;
                         overflow: hidden;
-                        background-color: #f1f1f1;}
+                        background-color: ;}
             #spacing {margin: 20px;}
          </style>
     </head>
     <body>
         <div id="spacing">
-        <div class="header">Lillian Evans</div><br><br>
+        <div class="image"><img src="lil.png" alt="Lillian Evans" height="100px"></div><br><br>
         
+         <div class="header2">
+        Education</div>
+        <button type="button" class="collapsible"><p>Parsons School of Design, New York, NY<br>August 2016 - May 2020</p></button><div class="content"><div class="explanation">Integrated Design BFA, Art and Design History and Social Practice Minors</div></div><br>
+            
         <div class="header2">
         Experience</div><br>
         
-        <button type="button" class="collapsible"><div class="underline">Research Assistant<br>The New School, New York City, NY<br>January 2018-present</div></button><div class="content"><div class="explanation">I assisted artist Shari Diamond in creating a successful Kickstarter campaign to fund her artist book. We created a brand for the social media presence of the project, developed a budget, shot a promotional video, and designed items to send to the backers of the book. I  also worked with designer Andrew Shea to create an organized catalogue of case studies for his future classes as well as updating his Wordpress website. This project included research, collection, categorization, and work in InDesign.</div></div><br>
+        <button type="button" class="collapsible"><div class="underline">Research Assistant<br>The New School, New York City, NY<br>January 2018-present</div></button><div class="content"><div class="explanation">I assisted artist <b>Shari Diamond</b> in creating a successful Kickstarter campaign to fund her artist book. We created a brand for the social media presence of the project, developed a budget, shot a promotional video, and designed items to send to the backers of the book. I  also worked with designer <b>Andrew Shea</b> to create an organized catalogue of case studies for his future classes as well as updating his Wordpress website. This project included research, collection, categorization, and work in InDesign.</div></div><br>
         
         <button type="button" class="collapsible"><div class="underline">Gallery Associate<br>Betty Moody Gallery, Houston, TX</div><p>May 2019 - August 2019, May 2018 - August 2018</p></button><div class="content"><div class="explanation">I worked with the gallery owner to show artwork to clients, as well as outreach through emails and phone calls. I have assisted in the curation and hanging of two shows, a summer group show and another for Claire Ankenman. I also took on a project organizing and facilitating the donation of 200 books from curator Clint Willour to the Museum of Fine Arts, Houston and The Menil Collection.</div></div> <br>
         
         <button type="button" class="collapsible"><div class="underline">Summer Intern<br>Burning Bones Press, Houston, TX</div><p>May 2019 - August 2019</p></button><div class="content"><div class="explanation">At BBP I assisted in daily shop tasks like cleaning and emulsioning screens, assisting printmakers with personal and commissioned projects, boxing up work and materials for shipment, and organization around the shop.</div></div><br>
-        
-        <div class="header2">
-        Education</div>
-            <button type="button" class="collapsible"><p>Parsons School of Design, New York, NY<br>August 2016 - May 2020</p></button><div class="content"><div class="explanation">Integrated Design BFA, Art and Design History and Social Practice Minors</div></div><br>
         
         <div class="header2">
         Activities</div><button type="button" class="collapsible"><p>Zine Club, Parsons School of Design -- Officer</p><p>February 2018 - present</p></button><div class="content"><div class="explanation">Actively engaged in the production of zines and collages, as well as in dialogues and critical assessment of the work of others.</div></div><br>
