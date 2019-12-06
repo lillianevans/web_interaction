@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <title>Lillian Evans</title>
+        <style> 
+            #logo {animation-name: logoAnimation; 
+            animation-duration: 10s;
+            animation-play-state: paused;}
+            
+            @keyframes logoAnimation {
+            0% {color: black;}
+            50% {color: pink;}
+                100% {color: black;}}
+            
+            p {opacity: 0;
+            transition:1s ease;}
+        .slide{
+            position:absolute;
+        width:100px;
+        height: 100px;
+        background-color: blue;
+            display: inline-block;}</style>
+    </head>
+    <body>
+        <div class="slide" style="left:-50px; background-color: green">1</div>
+        <div class="slide" style="left:40%"></div>
+        <div class="slide" style="left:98%; background-color: red"></div>
+        
+<h1 id="logo">Brackets</h1>
+        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.""Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.""Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.""Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+        
+      
+            
+        
+    </body>
+    <script src="js/jquery.js"></script>
+    <script>
+    $("#logo").click(function(){
+        $(this).css('animation-play-state', 'running');
+    })
+    
+    $(document).scroll(function(){
+    var scrollP = $(document).scrollTop();
+    if (scrollP > 0) {
+    $('p').css('opacity', '0');
+    }
+    var scrollCSS = scrollP/100 + "px"
+    $('p').css('font-size', scrollCSS);
+    });
+    var ticker = 0;
+    $(document).click(function(){
+        ticker += 1;
+        if(ticker > 2){
+            ticker=0;
+            
+        
+        }
+    })</script>
+    </html>
