@@ -13,26 +13,52 @@
                 font-family: "lilliansk";
                 src: url("fonts/lilliansk.ttf")
             }
+            @font-face {
+                font-family: "lillianfont";
+                src: url("fonts/lillianfont.ttf")
+            }
+            @font-face {
+                font-family: "Courier";
+                src: url("fonts/Courier.dfont")
+            }
             body {background-image:;}
+            p {letter-spacing: 2px;}
             .image {text-align: center;}
-            p {font-family: 'lilliansk', monospace;
-            font-size: 30px;}
-            
-            .header {font-family: lilliansk, monospace;
-                font-size: 30px;}
-            
-            .header2 {font-family: lilliansk, monospace;
-                font-size: 30px;
-                    color: dodgerblue;
-                background-color: white;}
-            .explanation:hover {font-family: lilliansk, monospace;
-                font-size: 30px;
-            background-color: white;}
-            .explanation {font-family: 'Source Code Pro', sans-serif;
+           
+            .off {font-family: Courier, sans-serif;
             margin: 30px;
             font-size: 30px;
             padding: 10px;
             background-color: white;}
+            .on {font-family: lillianfont, monospace;
+            font-size: 30px;
+            letter-spacing: -6px;}
+            .header {font-family: lillianfont, monospace;
+                font-size: 50px;
+            letter-spacing: 2.5px;}
+            
+            .header2 {font-family: lillianfont, monospace;
+                font-size: 30px;
+                    color: dodgerblue;
+                background-color: white;
+            letter-spacing: 2.5px;}
+            
+            .explanation:hover {font-family: lillianfont, monospace;
+                font-size: 30px;
+            background-color: white;}
+            #myDIV {font-family: lilliansk, monospace;
+                font-size: 30px;
+            background-color: white;
+            letter-spacing: 2.5px;}
+            #change {font-family: lilliansk, monospace;
+                font-size: 30px;
+            background-color: white;}
+            .explanation {font-family: Courier, sans-serif;
+            margin: 30px;
+            font-size: 30px;
+            padding: 10px;
+            background-color: white;
+            letter-spacing: 2.5px;}
             .underline {font-family: lilliansk, monospace;
             font-size: 30px;
             text-decoration: underline;}
@@ -47,7 +73,6 @@
                 font-size: 30px;
                 
             }
-            .active, .collapsible:hover {background-color: #f1f1f1; }
             .content {padding: 0 18px;
                         display: none;
                         overflow: hidden;
@@ -55,13 +80,17 @@
             #spacing {margin: 20px;}
          </style>
     </head>
-    <body>
+    <body class="on" onclick="this.className = this.className == 'on' ? 'off' : 'on'">
         <div id="spacing">
-        <div class="image"><img src="lil.png" alt="Lillian Evans" height="100px"></div><br><br>
+        <div class="header">LIllIan evans</div><br><br>
         
-         <div class="header2">
+        <p><button onclick="myFunction()"><div id="myDIV">Dean's List 2016-2018, Parsons School of Design<br>2016 Martell Award Winner, Contemporary Arts Museum, Houston</div></button></p>
+        
+        <p>Dean's List 2016-2018, Parsons School of Design<br>2016 Martell Award Winner, Contemporary Arts Museum, Houston</p>
+        
+        <div class="header2">
         Education</div>
-        <button type="button" class="collapsible"><div class="underline">Parsons School of Design, New York, NY</div><p>August 2016 - May 2020</p></button><div class="content"><div class="explanation">Integrated Design BFA, Art and Design History and Social Practice Minors</div></div><br>
+        <button type="button" class="collapsible"><div class="underline">Parsons School of DesIgn, New York, NY</div><p>August 2016 - May 2020</p></button><div class="content"><div class="explanation">Integrated Design BFA, Art and Design History and Social Practice Minors</div></div><br>
             
         <div class="header2">
         Experience</div><br>
@@ -74,9 +103,6 @@
         
         <div class="header2">
         Activities</div><button type="button" class="collapsible"><div class="underline">Officer<br>Zine Club, Parsons School of Design</div><p>February 2018 - present</p></button><div class="content"><div class="explanation">Actively engaged in the production of zines and collages, as well as in dialogues and critical assessment of the work of others.</div></div><br>
-        
-        <button type="button" class="collapsible"><div class="header2">
-            Skills</div></button><div class="content"><div class="explanation">Adobe CC ( InDesign, Photoshop, Illustrator, XD, Acrobat, Premiere Pro)<br>HTML and CSS<br>Wordpress<br>Technical skills (bookmaking, screenprinting, ceramics, sewing, printmaking, laser cutting, wood shop, risograph)<br>Attentive to details<br>Strong organizational skills.</div></div><br>
         
         <button type="button" class="collapsible"><div class="header2">
         Awards</div></button><div class="content"><div class="explanation">Dean's List 2016-2018, Parsons School of Design<br>2016 Martell Award Winner, Contemporary Arts Museum, Houston</div></div><br>
@@ -99,6 +125,15 @@ for (i = 0; i < coll.length; i++) {
     }
   });
 }
+function myFunction() {
+  var x = document.getElementById("myDIV");
+  if (x.innerHTML === "Dean's List 2016-2018, Parsons School of Design<br>2016 Martell Award Winner, Contemporary Arts Museum, Houston") {
+    x.innerHTML = "hey";
+  } else {
+    x.innerHTML = "Dean's List 2016-2018, Parsons School of Design<br>2016 Martell Award Winner, Contemporary Arts Museum, Houston";
+  }
+}
+           
 </script>
     </body>
  
