@@ -13,7 +13,7 @@
                 font-family: "lilliansk";
                 src: url("fonts/lilliansk.ttf")
             }
-              @font-face {
+            @font-face {
                 font-family: "lillianfont";
                 src: url("fonts/lillianfont.ttf")
             }
@@ -21,23 +21,38 @@
                 font-family: "Courier";
                 src: url("fonts/Courier.dfont")
             }
+            body {background-image:;}
+            p {letter-spacing: 2px;}
+            .image {text-align: center;}
+           
+            .on {font-family: Courier, sans-serif;
+            font-size: 30px;
+        }
+            .off {font-family: lilliansk, monospace;
+            font-size: 30px;}
             
             .header {font-family: lillianfont, monospace;
-                font-size: 50px;} 
+                font-size: 50px;
+            letter-spacing: 2.5px;
+            padding-top: 20px;}
             
             .header2 {font-family: lillianfont, monospace;
                 font-size: 30px;
                     color: dodgerblue;
                 background-color: white;
+            letter-spacing: 2.5px;
             padding-bottom: 20px;
             padding-top: 30px;}
-            
-            .underline {font-family: lillianfont, monospace;
+        
+            #change {font-family: lilliansk, monospace;
+                font-size: 30px;
+            background-color: white;}
+            .explanation {font-family: lillianfont, monospace;
             font-size: 30px;
-            line-height: 40px;
-            margin: none;
-            padding: none;}
-            
+            }
+            .underline {font-family: lilliansk, monospace;
+            font-size: 30px;
+            text-decoration: underline;}
             .collapsible {
                 color: black;
                 cursor: pointer;
@@ -48,41 +63,25 @@
                 font-size: 30px;
                 
             }
-            .content {font-family: Courier, sans-serif;
-            margin: 30px;
-            font-size: 30px;
-            padding: 10px;
-            background-color: white;
-            letter-spacing: 2.5px;}
-           .active {
-  background-color: #ccc;
-}
             .date {font-family: lillianfont, monospace;
             font-size: 30px;}
-            
-            
-            .off {font-family: Courier, sans-serif;
-            font-size: 30px;
-            background-color: white;}
-            .on {font-family: lillianfont, monospace;
-            font-size: 30px;}
-            
+            .content {
+                        display: none;
+                        overflow: hidden;
+                        }
             body {margin: reset;}
             button {margin: 0 0 0 -10px;
                     padding: none;}
             #spacing {margin: 20px;}
-            
-            
          </style>
     </head>
-    <body>
+    <body class="on" onclick="this.className = this.className == 'on' ? 'off' : 'on'">
         <div id="spacing">
-        <div class="header">Lillian Evans</div><br><br>
-        
+        <div class="header">LIllIan Evans</div><br><br>
         
         <div class="header2">
         Education</div>
-        <button type="button" class="collapsible"><div class="underline">Parsons School of DesIgn, New York, NY</div><div class="date">August 2016 - May 2020</div></button><div class="content"><p>Integrated Design BFA, Art and Design History and Social Practice Minors</p></div><br>
+            <button type="button" class="collapsible"><div class="underline">Parsons School of DesIgn, New York, NY</div><div class="date">August 2016 - May 2020</div></button><div class="content"><p>Integrated Design BFA, Art and Design History and Social Practice Minors</p></div><br>
             
         <div class="header2">
         Experience</div>
@@ -94,17 +93,16 @@
         <button type="button" class="collapsible"><div class="underline">Summer Intern<br>Burning Bones Press, Houston, TX</div><div class="date">May 2019 - August 2019</div></button><div class="content"><p>At BBP I assisted in daily shop tasks like cleaning and emulsioning screens, assisting printmakers with personal and commissioned projects, boxing up work and materials for shipment, and organization around the shop.</p></div><br>
         
         <div class="header2">
-        Activities</div><button type="button" class="collapsible"></button><div class="content"><div class="underline">Officer<br>Zine Club, Parsons School of Design<br>February 2018 - present</div><div class="content"><p>Actively engaged in the production of zines and collages, as well as in dialogues and critical assessment of the work of others.</p></div><br>
+        Activities</div><button type="button" class="collapsible"><div class="underline">Officer<br>Zine Club, Parsons School of Design</div><div class="date">February 2018 - present</div></button><div class="content"><p>Actively engaged in the production of zines and collages, as well as in dialogues and critical assessment of the work of others.</p></div><br>
         
-        <div class="header2">
-            Awards</div><button type="button" class="collapsible"></button><div class="content">Dean's List 2016-2018, Parsons School of Design<br>2016 Martell Award Winner, Contemporary Arts Museum, Houston</div><br>
+        <button type="button" class="collapsible"><div class="header2">
+        Awards</div></button><div class="content"><p>Dean's List 2016-2018, Parsons School of Design<br>2016 Martell Award Winner, Contemporary Arts Museum, Houston</p></div><br>
         
-       <button type="button" class="collapsible"> <div class="header2">
+        <button type="button" class="collapsible"><div class="header2">
         Exhibitions</div></button><div class="content"><p>Martel Award, 2016-2017 Contemporary Arts Museum, Houston Website (juried)<br>Dove House: Senior Show, 2016 High School for the Performing and Visual Arts<br>Jung Center, 2015 Jung Center (juried)<br>Imprint 2015, 2015 High School for the Performing and Visual Arts (juried)</p></div></div>
-        </div>
+        
         <script>
 var coll = document.getElementsByClassName("collapsible");
-
 var i;
 
 for (i = 0; i < coll.length; i++) {
@@ -116,8 +114,11 @@ for (i = 0; i < coll.length; i++) {
     } else {
       content.style.display = "block";
     }
-  });        
+  });
+}
+
+           
 </script>
-   
- </body>
+    </body>
+ 
     </html>
